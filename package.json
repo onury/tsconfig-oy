@@ -1,24 +1,24 @@
 {
-    "name": "tsconfig-oy",
-    "version": "1.0.0",
-    "description": "Shared TypeScript config for my projects",
-    "repository": "onury/tsconfig-oy",
-    "author": "Onur Yildirim <onur@cutepilot.com>",
-    "license": "MIT",
-    "main": "tsconfig.json",
-    "engines": {
-        "node": ">=12"
-    },
-    "files": [
-        "tsconfig.json",
-        "README.md",
-        "LICENSE"
-    ],
-    "keywords": [
-        "tsconfig",
-        "typescript",
-        "ts",
-        "config",
-        "configuration"
-    ]
+  "name": "tsconfig-oy",
+  "version": "1.0.0",
+  "description": "Shared TypeScript config for my projects",
+  "repository": "onury/tsconfig-oy",
+  "author": "Onur Yildirim <onur@cutepilot.com>",
+  "license": "MIT",
+  "main": "tsconfig.json",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "tsconfig.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "tsconfig",
+    "typescript",
+    "ts",
+    "config",
+    "configuration"
+  ]
 }
