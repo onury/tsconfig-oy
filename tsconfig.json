@@ -1,104 +1,92 @@
 // https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
 {
-    "compileOnSave": false,
-    // https://www.typescriptlang.org/docs/handbook/compiler-options.html
-    "compilerOptions": {
-        // Disabled due to https://github.com/Microsoft/TypeScript/issues/29172
-        // "outDir": "lib",
-        "declarationDir": "lib",
-        // "baseUrl": ".",
-
-        "allowJs": false, // cannot be true when decleration is true
-        "allowSyntheticDefaultImports": true,
-        "allowUnreachableCode": false,
-        "allowUnusedLabels": false,
-        "alwaysStrict": false,
-        "charset": "utf8",
-        "checkJs": false,
-        "declaration": true,
-        "diagnostics": false,
-        "disableSizeLimit": false,
-        "downlevelIteration": false,
-        "emitBOM": false,
-        "emitDeclarationOnly": false,
-        "emitDecoratorMetadata": true,
-        "esModuleInterop": true,
-        "experimentalDecorators": true,
-        "forceConsistentCasingInFileNames": true,
-        "importHelpers": false,
-        "inlineSourceMap": false,
-        "inlineSources": false,
-        "isolatedModules": false,
-        "jsx": "react",
-        "jsxFactory": "React.createElement",
-        "lib": [
-            "ES2019",
-			"ES2020.String",
-			"DOM"
-        ],
-        "listEmittedFiles": false,
-        "listFiles": false,
-        "locale": "en-us",
-        "maxNodeModuleJsDepth": 0,
-        "module": "ES2020",
-        "moduleResolution": "node",
-        "newLine": "lf",
-        "noEmit": false,
-        "noEmitHelpers": false,
-        "noEmitOnError": true,
-        "noErrorTruncation": false,
-        "noFallthroughCasesInSwitch": true,
-        "noImplicitAny": true,
-        "noImplicitReturns": true,
-        "noImplicitOverride": true,
-        "noImplicitThis": true,
-        "noImplicitUseStrict": false,
-        "noLib": false,
-        "noPropertyAccessFromIndexSignature": false,
-        "noResolve": false,
-        "noStrictGenericChecks": false,
-        "noUnusedLocals": true,
-        "noUnusedParameters": false,
-        "noUncheckedIndexedAccess": false,
-        "preserveConstEnums": false,
-        "preserveSymlinks": false,
-        "preserveWatchOutput": false,
-        "pretty": true,
-        "removeComments": false,
-        // ESM doesn't yet support JSON modules.
-        "resolveJsonModule": false,
-        "skipLibCheck": false,
-        "sourceMap": true,
-        "strict": true,
-        "strictFunctionTypes": true,
-        "strictPropertyInitialization": true,
-        "strictNullChecks": true,
-        "stripInternal": true,
-        "suppressExcessPropertyErrors": false,
-        "suppressImplicitAnyIndexErrors": true,
-        "target": "ES2019", // Node v12
-        "traceResolution": false,
-        "types": [
-            "node",
-            "jest"
-        ],
-        "typeRoots": [
-            "node_modules/@types",
-            "node_modules"
-        ]
-    },
-    "include": [
-        // CAUTION: do not include anything else
-        // or the dir structure will change
-        "src/**/*.ts"
+  "compileOnSave": false,
+  // https://www.typescriptlang.org/docs/handbook/compiler-options.html
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "declarationDir": "./lib",
+    "outDir": "./lib",
+    "target": "es2022",
+    "lib": [
+      "es2022",
+      "es2022.string",
+      "DOM"
     ],
-    "exclude": [
-        "node_modules",
-        "dev",
-        "lib",
-        "build",
-        "dist",
-        "backup",
-        "_backup"
+    "module": "nodenext", // has to be lowercase
+    "moduleResolution": "nodenext", // has to be lowercase
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "allowJs": false, // cannot be true when decleration is true
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "alwaysStrict": false,
+    "checkJs": false,
+    "diagnostics": false,
+    "disableSizeLimit": false,
+    "downlevelIteration": false,
+    "emitBOM": false,
+    "emitDeclarationOnly": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": false,
+    "incremental": true,
+    "inlineSourceMap": false,
+    "inlineSources": false,
+    // "isolatedModules": false,
+    "jsx": "react",
+    "jsxFactory": "React.createElement",
+    "newLine": "lf",
+    // "noErrorTruncation": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    // "noUncheckedIndexedAccess": false,
+    "paths": {
+      "@cutepilot/*": [
+        "../*"
+      ]
+    },
+    // "preserveConstEnums": false,
+    // "preserveSymlinks": false,
+    // "preserveWatchOutput": false,
+    // "pretty": true,
+    "removeComments": false,
+    // // ESM doesn't yet support JSON modules.
+    // "resolveJsonModule": false,
+    "sourceMap": true,
+    "strict": true,
+    "strictBindCallApply": false,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "strictNullChecks": true,
+    "types": [
+      "node",
+      "jest"
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules"
     ]
+  },
+  "include": [
+    // CAUTION: do not include anything else
+    // or the dir structure will change
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dev",
+    "lib",
+    "build",
+    "dist",
+    "backup",
+    "_backup"
+  ]
 }
