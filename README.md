@@ -24,7 +24,7 @@ $ npm install --save-dev tsconfig-oy
 }
 ```
 
-## v2.0.0 — modernization (breaking)
+## v2.0.1 — modernization (breaking)
 
 Future-proofed for TypeScript 6/7 and ESM:
 
