@@ -1,13 +1,13 @@
 {
   "name": "tsconfig-oy",
-  "version": "1.1.0",
-  "description": "Shared TypeScript config for my projects",
+  "version": "2.0.0",
+  "description": "Shared TypeScript config for my projects (modernized for TS 6/7, ESM/NodeNext).",
   "repository": "onury/tsconfig-oy",
   "author": "Onur Yildirim <onur@cutepilot.com>",
   "license": "MIT",
   "main": "tsconfig.json",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "files": [
     "tsconfig.json",

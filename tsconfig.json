@@ -1,92 +1,29 @@
-// https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
 {
-  "compileOnSave": false,
-  // https://www.typescriptlang.org/docs/handbook/compiler-options.html
   "compilerOptions": {
-    "baseUrl": ".",
-    "declaration": true,
-    "declarationDir": "./lib",
-    "outDir": "./lib",
-    "target": "es2022",
-    "lib": [
-      "es2022",
-      "es2022.string",
-      "DOM"
-    ],
-    "module": "nodenext", // has to be lowercase
-    "moduleResolution": "nodenext", // has to be lowercase
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
-    "allowJs": false, // cannot be true when decleration is true
-    "allowSyntheticDefaultImports": true,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "alwaysStrict": false,
-    "checkJs": false,
-    "diagnostics": false,
-    "disableSizeLimit": false,
-    "downlevelIteration": false,
-    "emitBOM": false,
-    "emitDeclarationOnly": false,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": false,
-    "incremental": true,
-    "inlineSourceMap": false,
-    "inlineSources": false,
-    // "isolatedModules": false,
-    "jsx": "react",
-    "jsxFactory": "React.createElement",
-    "newLine": "lf",
-    // "noErrorTruncation": false,
-    "noFallthroughCasesInSwitch": true,
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    "strict": true,
     "noImplicitAny": false,
+    "strictBindCallApply": false,
     "noImplicitReturns": true,
     "noImplicitOverride": true,
-    "noImplicitThis": true,
+    "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": false,
-    // "noUncheckedIndexedAccess": false,
-    "paths": {
-      "@cutepilot/*": [
-        "../*"
-      ]
-    },
-    // "preserveConstEnums": false,
-    // "preserveSymlinks": false,
-    // "preserveWatchOutput": false,
-    // "pretty": true,
+
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
     "removeComments": false,
-    // // ESM doesn't yet support JSON modules.
-    // "resolveJsonModule": false,
-    "sourceMap": true,
-    "strict": true,
-    "strictBindCallApply": false,
-    "strictFunctionTypes": true,
-    "strictPropertyInitialization": true,
-    "strictNullChecks": true,
-    "types": [
-      "node",
-      "jest"
-    ],
-    "typeRoots": [
-      "node_modules/@types",
-      "node_modules"
-    ]
-  },
-  "include": [
-    // CAUTION: do not include anything else
-    // or the dir structure will change
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "dev",
-    "lib",
-    "build",
-    "dist",
-    "backup",
-    "_backup"
-  ]
+
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true
+  }
 }
