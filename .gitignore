@@ -7,3 +7,6 @@ dist/
 npm-debug.log
 test/coverage/
 test/tmp/
+
+# ---- Author's working notes: planning, specs, working agreements ----
+_notes/
